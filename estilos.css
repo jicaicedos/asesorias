@@ -1,0 +1,20 @@
+.encabezado {
+	background: gray;
+}
+
+.menu {
+	background: lightblue;
+}
+
+.estructura {
+	background: lightgreen;
+	padding: 5px;
+}
+
+.contenido_izquierdo {
+	background: lightgray;
+}
+
+.contenido_central {
+	background: orange;
+}
