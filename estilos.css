@@ -1,9 +1,19 @@
 .encabezado {
 	background: gray;
+	display: -webkit-inline-box;
+	width: 100%;
 }
 
+.encabezado h1 {
+	float: center;
+}
 .menu {
 	background: lightblue;
+}
+
+.menu ul li {
+	display: inline;
+	padding: 25px 25px;
 }
 
 .estructura {
@@ -13,8 +23,25 @@
 
 .contenido_izquierdo {
 	background: lightgray;
+	width: 22%;
+	float: left;
+
 }
 
 .contenido_central {
 	background: orange;
+	display: inline-block;
+	text-align: -webkit-center;
+	width: 50%;
+}
+
+.contactenos_form {
+	display: table-caption;
+}
+
+
+.contenido_derecho {
+	background: lightgray;
+	width: 22%;
+	float: right;
 }
