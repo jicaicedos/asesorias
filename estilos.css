@@ -25,7 +25,6 @@
 	background: lightgray;
 	width: 22%;
 	float: left;
-
 }
 
 .contenido_central {
@@ -35,13 +34,24 @@
 	width: 50%;
 }
 
-.contactenos_form {
-	display: table-caption;
-}
-
-
 .contenido_derecho {
 	background: lightgray;
 	width: 22%;
 	float: right;
+}
+
+.contactenos_form p {
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+
+.contactenos_form {
+	margin-left: 150px;
+	text-align: left;
+}
+
+.nombre, .apellido, .email, .telefono, .direccion {
+	width: 300px;
 }
