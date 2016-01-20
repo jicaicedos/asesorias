@@ -6,6 +6,8 @@
 	<title>Asesorias</title>
 	<script src="http://code.jquery.com/jquery-2.2.0.js"></script>
 	<script src="js/asesoria.js"></script>
+	<script src="https://cdn.jsdelivr.net/sharer.js/0.2.3/sharer.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="layout">
@@ -20,21 +22,11 @@
 					<li><a href="">tarifas</a></li>
 					<li><a href="">información</a></li>
 					<li><a href="">sede adminitrativa</a></li>
-					<li><a href="">factura en línea</a></li>
+					<!-- <li><a href="">factura en línea</a></li> -->
 				</ul>
 			</nav>
 		</header>
 		<div class="estructura">
-			<div class="contenido_izquierdo">
-				<p>Servicios</p>
-				<ul>
-					<li><a href="">Barrido de vías</a></li>
-					<li><a href="">Recolección</a></li>
-					<li><a href="">Tratamiento y disposición final</a></li>
-					<li><a href="">Tarifas</a></li>
-					<li><a href="">Servicios especiales</a></li>
-				</ul>
-			</div>
 			<div class="contenido_central">
 				<p id="p_contactenos">Contáctenos formulado su PQRS</p>
 				<form action="" class="contactenos_form">
@@ -50,6 +42,16 @@
 					</p>
 				</form>
 			</div>
+			<div class="contenido_izquierdo">
+				<p>Servicios</p>
+				<ul>
+					<li><a href="">Barrido de vías</a></li>
+					<li><a href="">Recolección</a></li>
+					<li><a href="">Tratamiento y disposición final</a></li>
+					<li><a href="">Tarifas</a></li>
+					<li><a href="">Servicios especiales</a></li>
+				</ul>
+			</div>
 			<div class="contenido_derecho">
 			    <p>Comunidad</p>
 			    <ul>
@@ -60,6 +62,35 @@
 			</div>
 		</div>
 		<footer>
+			<ul class="menu_compartir">
+				<li class="btn_compartir">
+					<button class="sharer button" data-sharer="twitter" 
+							data-title="Aseroias.sas" 
+							data-url="http://jicaicedo.github.com/asesorias">
+						<i class="fa fa-twitter"></i>
+					</button>					
+				</li>
+				<li class="btn_compartir">
+					<button class="sharer button" data-sharer="facebook">
+					<i class="fa fa-facebook"></i>						
+					</button>
+				</li>
+				<li class="btn_compartir">
+					<button class="sharer button" data-sharer="googleplus">
+					<i class="fa fa-google-plus"></i>
+					</button>
+				</li>
+				<li class="btn_compartir">
+					<button class="sharer" data-sharer="email">
+					<i class="fa fa-envelope"></i>
+					</button>
+				</li>
+				<li class="btn_compartir">
+					<button class="sharer" data-sharer="whatsapp">
+					<i class="fa fa-whatsapp"></i>
+					</button>
+				</li>
+			</ul>
 			<p>(C) asesoramos.sas </p>
 		</footer>		
 	</div>	

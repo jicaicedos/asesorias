@@ -17,13 +17,15 @@ a {
 	justify-content: space-between;
 }
 
-.encabezado h1 {
+h1 {
 	/*float: center;*/
+  font-size: 1.5em;
 }
 .menu {
 	background: #59BFA5;
 	border-radius: 0.7em;
 	padding: 0.3em;
+
 	display: flex;
 	justify-content: space-around;
 	background: -webkit-gradient(linear, left top, left bottom, from(#59BFA5), to(gray));
@@ -31,11 +33,15 @@ a {
 }
 
 .menu ul li {
-	padding: 0.5em 2em;
+	padding: 0.5em .5em;
 	display: inline;
 	border-right: 0.1em solid white;
 }
 
+.menu  ul {
+  padding-left: 0em;
+  padding-right: 0em;
+}
 .menu ul li a {
 		color: seashell;
 }
@@ -47,13 +53,12 @@ a {
 
 .estructura {
 	padding: 5px;
-	display: flex;
-	justify-content: center;
 }
 
 .contenido_izquierdo, .contenido_central, .contenido_derecho {
 	border: 2px solid #E2DDD9;
 	background: #F1EFEF;
+  margin-bottom: .6em;
 	/*background: white;*/
 }
 
@@ -64,14 +69,10 @@ a {
 	background: #E2DDD9;
 }
 
-.contenido_izquierdo {
-	width: 15em;
-	margin-right: 1em;
-}
 
 .contenido_central {
 	text-align: center;
-	width: 30em;
+	width: 25em;
 	background: #E2DDD9;
 }
 
@@ -81,10 +82,6 @@ a {
 	margin: 0;
 }
 
-.contenido_derecho {
-	width: 15em;
-	margin-left: 1em;
-}
 
 .contactenos_form p {
 	margin: 0px;
@@ -102,10 +99,155 @@ a {
 }
 
 #logo-pqrs {
-	width: auto;
-	height: 6em;
+	width: 4em;
+	height: 4em;
 }
 
 footer p {
 	text-align: center;
+  margin-top: 1em;
+  margin-bottom: .1em;
 }
+
+button {
+  background-color: #aaa;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 #888, 1px 4px 2px rgba(0,0,0,0.2);
+  color: white;
+  display: block;
+  font-family: sans-serif;
+  /*font-size: .85em;*/
+  font-weight: 300;
+  outline: none;
+  padding: 1em 0;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  width: 3em;
+  height: 3em;
+}
+
+button[data-sharer="twitter"] {
+  background-color: #00aced;
+  box-shadow: 0 2px 0 #0084b4, 1px 4px 2px rgba(0,0,0,0.2);
+}
+button[data-sharer="facebook"] {
+  background-color: #3b5998;
+  box-shadow: 0 2px 0 #224389, 1px 4px 2px rgba(0,0,0,0.2);
+}
+button[data-sharer="linkedin"] {
+  background-color: #007AB5;
+  box-shadow: 0 2px 0 #005E8C, 1px 4px 2px rgba(0,0,0,0.2);
+}
+button[data-sharer="googleplus"] {
+  background-color: #DD4C39;
+  box-shadow: 0 2px 0 #BB2D1A, 1px 4px 2px rgba(0,0,0,0.2);
+}
+button[data-sharer="email"] {
+  background-color: #444;
+  box-shadow: 0 2px 0 #222, 1px 4px 2px rgba(0,0,0,0.2);
+}
+button[data-sharer="whatsapp"] {
+  background-color: #4DC247;
+  box-shadow: 0 2px 0 #30AF29, 1px 4px 2px rgba(0,0,0,0.2);
+}
+button[data-sharer="telegram"] {
+  background-color: #34ADE1;
+  box-shadow: 0 2px 0 #0E9BD8, 1px 4px 2px rgba(0,0,0,0.2);
+}
+button[data-sharer="viber"] {
+  background-color: #7C529E;
+  box-shadow: 0 2px 0 #5F3485, 1px 4px 2px rgba(0,0,0,0.2);
+}
+button[data-sharer="pinterest"] {
+  background-color: #CB2029;
+  box-shadow: 0 2px 0 #A30E15, 1px 4px 2px rgba(0,0,0,0.2);
+}
+button[data-sharer="tumblr"] {
+  background-color: #32506d;
+  box-shadow: 0 2px 0 #1F3C59, 1px 4px 2px rgba(0,0,0,0.2);
+}
+button[data-sharer="hackernews"] {
+  background-color: #FF6700;
+  box-shadow: 0 2px 0 #C65000, 1px 4px 2px rgba(0,0,0,0.2);
+}
+button[data-sharer="reddit"] {
+  background-color: #CEE3F8;
+  box-shadow: 0 2px 0 #A2C6E8, 1px 4px 2px rgba(0,0,0,0.2);
+  color: #335f89;
+}
+button[data-sharer="vk"] {
+  background-color: #45668E;
+  box-shadow: 0 2px 0 #2B4E77, 1px 4px 2px rgba(0,0,0,0.2);
+}
+button[data-sharer="buffer"] {
+  background-color: #46ABED;
+  box-shadow: 0 2px 0 #2198E5, 1px 4px 2px rgba(0,0,0,0.2);
+}
+button[data-sharer="xing"] {
+  background-color: #006464;
+  box-shadow: 0 2px 0 #135353, 1px 4px 2px rgba(0,0,0,0.2);
+}
+
+button:active {
+  box-shadow: 0 0 0 transparent;
+  transform: translateY(2px);
+}
+
+button .fa {
+  height: 100%;
+  left: 0;
+  line-height: 42px;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  /*width: 1em;*/
+  font-size: 2em;
+}
+
+
+.btn_compartir {
+  display: inline-block;
+  margin-top: .1em;
+  margin-bottom: .1em;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+i {
+  margin-left: 0.3em;
+}
+
+/*
+  Configuración para dispositivos móviles
+*/
+
+@media screen screen and (min-width 1000px) {
+  .estructura {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .contenido_izquierdo {
+    width: 15em;
+    margin-right: 1em;
+  }
+
+  .contenido_derecho {
+    width: 15em;
+    margin-left: 1em;
+  }
+
+  .menu_compartir {
+    display: block;
+    list-style: none;
+    margin: 1em auto auto auto;
+    max-width: 100%;
+    text-align: center;
+  }
+
+}
+
+
