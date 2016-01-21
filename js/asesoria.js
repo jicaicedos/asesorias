@@ -46,7 +46,6 @@ $(	function() {
 		borrarDatos();
 		// evita recargue de página
 		event.preventDefault()
-		alert('clic en BORRAR')
 	});
 
 

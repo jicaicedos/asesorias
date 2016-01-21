@@ -1,9 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
-
 body {
-	display: flex;
-	justify-content: center;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -11,14 +8,11 @@ a {
 	text-decoration: none;
 }
 .encabezado {
-	/*background: gray;*/
-	/*display: -webkit-inline-box;*/
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
 }
 
 h1 {
-	/*float: center;*/
   font-size: 1.5em;
 }
 .menu {
@@ -71,9 +65,8 @@ h1 {
 
 
 .contenido_central {
-	text-align: center;
-	width: 25em;
 	background: #E2DDD9;
+  order: -1;
 }
 
 #p_contactenos {
@@ -206,6 +199,14 @@ button .fa {
   font-size: 2em;
 }
 
+  .menu_compartir {
+    display: block;
+    list-style: none;
+    margin: 0em;
+    max-width: 100%;
+    text-align: center;
+  }
+
 
 .btn_compartir {
   display: inline-block;
@@ -220,10 +221,10 @@ i {
 }
 
 /*
-  Configuración para dispositivos móviles
+  Configuración para PCs
 */
 
-@media screen screen and (min-width 1000px) {
+@media screen  and (min-width: 1000px) {
   .estructura {
     display: flex;
     justify-content: center;
@@ -234,20 +235,30 @@ i {
     width: 15em;
     margin-right: 1em;
   }
+  .contenido_central {
+    width: 25em;
+    order: 0;
+  }
 
   .contenido_derecho {
     width: 15em;
     margin-left: 1em;
   }
 
-  .menu_compartir {
-    display: block;
-    list-style: none;
-    margin: 1em auto auto auto;
-    max-width: 100%;
-    text-align: center;
+}
+
+/*
+  Pantalla pequeña Móviles
+*/
+
+@media screen and (max-width: 480px) {
+  .estructura {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenido_central {
+   order: -1;   
   }
 
 }
-
-
