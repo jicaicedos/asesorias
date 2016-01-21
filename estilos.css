@@ -251,7 +251,7 @@ i {
   Pantalla pequeña Móviles
 */
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 725px) {
   .estructura {
     display: flex;
     flex-direction: column;
