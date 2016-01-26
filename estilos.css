@@ -224,7 +224,7 @@ i {
   Configuración para PCs
 */
 
-@media screen  and (min-width: 720px) {
+@media screen  and (min-width: 1000px) {
   .estructura {
     display: flex;
     justify-content: center;
