@@ -1,11 +1,124 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
+
+/*
+  Fuente de iconos
+*/
+
+@font-face {
+    font-family: 'icons_asesorias_aspi';
+    src:    url('fonts/icons_asesorias_aspi.eot?mcgwk3');
+    src:    url('fonts/icons_asesorias_aspi.eot?mcgwk3#iefix') format('embedded-opentype'),
+        url('fonts/icons_asesorias_aspi.ttf?mcgwk3') format('truetype'),
+        url('fonts/icons_asesorias_aspi.woff?mcgwk3') format('woff'),
+        url('fonts/icons_asesorias_aspi.svg?mcgwk3#icons_asesorias_aspi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons_asesorias_aspi' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil2:before {
+    content: "\e906";
+}
+.icon-image:before {
+    content: "\e90d";
+}
+.icon-coin-dollar:before {
+    content: "\e93b";
+}
+.icon-phone:before {
+    content: "\e942";
+}
+.icon-location:before {
+    content: "\e947";
+}
+.icon-location2:before {
+    content: "\e948";
+}
+.icon-clock:before {
+    content: "\e94e";
+}
+.icon-calendar:before {
+    content: "\e953";
+}
+.icon-printer:before {
+    content: "\e954";
+}
+.icon-undo2:before {
+    content: "\e967";
+}
+.icon-redo2:before {
+    content: "\e968";
+}
+.icon-bubble:before {
+    content: "\e96b";
+}
+.icon-bubble2:before {
+    content: "\e96e";
+}
+.icon-user:before {
+    content: "\e971";
+}
+.icon-spinner6:before {
+    content: "\e97f";
+}
+.icon-search:before {
+    content: "\e986";
+}
+.icon-menu:before {
+    content: "\e9bd";
+}
+.icon-earth:before {
+    content: "\e9ca";
+}
+.icon-smile:before {
+    content: "\e9e1";
+}
+.icon-sad:before {
+    content: "\e9e5";
+}
+.icon-warning:before {
+    content: "\ea07";
+}
+.icon-arrow-right:before {
+    content: "\ea34";
+}
+.icon-arrow-left:before {
+    content: "\ea38";
+}
+.icon-google-plus:before {
+    content: "\ea8a";
+}
+.icon-facebook:before {
+    content: "\ea8e";
+}
+.icon-twitter:before {
+    content: "\ea93";
+}
+
+
+
 body {
 	font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
 
 a {
+  /*font-family: 'icons_asesorias_aspi', sans-serif;*/
 	text-decoration: none;
 }
 
@@ -22,13 +135,13 @@ h1 {
 	border-radius: 0.7em;
 	padding: 0.3em;
 
-	display: flex;
+/*	display: flex;
 	justify-content: space-around;
-	background: -webkit-gradient(linear, left top, left bottom, from(#59BFA5), to(gray));
+*/	background: -webkit-gradient(linear, left top, left bottom, from(#59BFA5), to(gray));
 	text-transform: capitalize;
 }
 
-.menu ul li {
+/*.menu ul li {
 	padding: 0.5em .5em;
 	display: inline;
 	border-right: 0.1em solid white;
@@ -38,6 +151,12 @@ h1 {
   padding-left: 0em;
   padding-right: 0em;
 }
+*/
+.icon-menu {
+  font-size: 1em;
+  /*display: inline-block;*/
+}
+
 .menu ul li a {
 		color: seashell;
 }
@@ -230,6 +349,13 @@ i {
 }
 
 
+
+/*.menu ul li:hover {
+  background: gray;
+  background: -webkit-gradient(linear, left top, left bottom, from(gray), to(#59BFA5));
+}
+*/
+
 /*
   Configuración para PCs
 */
@@ -258,6 +384,10 @@ i {
     margin-left: 1em;
   }
 
+ .menu ul li:nth-child(1) {
+    display: none;
+  }  
+
 }
 
 /*
@@ -270,8 +400,83 @@ i {
     flex-direction: column;
   }
 
+  .menu ul {
+    /*segun codigo pagina menu desplegable*/
+    list-style-type: none;
+    overflow: hidden;
+    transition: max-height .5s ease-in-out;
+    /*fin...*/
+
+   padding: 0px;
+    margin: 0px;    
+  }
+
+  /*segun codigo pagina menu desplegable*/
+  .menu__list.visible {
+    max-height: 20px;
+  }
+
+  .menu_link {
+    display: block;
+    line-height: 2;
+  }
+
+  .menu_link:hover {
+    background: gray;
+  }
+  /*fin...*/
+
   .contenido_central {
    order: -1;   
   }
 
 }
+
+
+
+
+/*
+ CODIGO ANTES DE MENU DESPLEGABLE MOVIL
+
+@media screen and (max-width: 719px) {
+  .estructura {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu ul li {
+    display: none;
+  }
+
+  .menu {
+    justify-content: flex-start;
+  }  
+
+  .menu ul {
+   padding: 0px;
+    margin: 0px;    
+  }
+
+  .menu li:hover > ul {
+    background: red;
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: auto;
+  }
+
+  .menu ul li:nth-child(1) {
+    display: block;
+    font-size: 1.5em;
+    padding: 0px;
+    margin: 0px;    
+    padding-left: .2em;
+    border: none;
+  }
+  .contenido_central {
+   order: -1;   
+  }
+
+}
+
+*/
