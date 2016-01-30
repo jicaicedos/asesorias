@@ -4,6 +4,8 @@ var $email
 var $telefono
 var $direccion
 var $texto_pqrs
+var $link
+var nodemailer = required('nodemailer')
 
 $(	function() {
 
@@ -33,6 +35,7 @@ $(	function() {
 		.on('click', function(event) { 
 			// evita recargue de página
 			event.preventDefault()			
+
 			alert('Datos a enviar: \n\n'+ 'Nombre: '+getDatos()[0] +
 				'\n'+ 'Apellido: '+getDatos()[1]+
 				'\n'+ 'Correo electrónico: '+getDatos()[2] +
@@ -40,6 +43,8 @@ $(	function() {
 				'\n'+ 'Dirección: '+getDatos()[4] +
 				'\n'+ 'PQRS: '+getDatos()[5]
 				)
+
+			alert('Correo enviado')
 		});
 
 	$('.borrar').on('click', function(event) { 
