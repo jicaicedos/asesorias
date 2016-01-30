@@ -5,7 +5,7 @@ var $telefono
 var $direccion
 var $texto_pqrs
 var $link
-var nodemailer = required('nodemailer')
+// var $nodemailer = required('nodemailer')
 
 $(	function() {
 

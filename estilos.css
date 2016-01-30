@@ -2,20 +2,21 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 a {
 	text-decoration: none;
 }
+
 .encabezado {
   display: flex;
   justify-content: space-around;
 }
 
-/*h1 {
-  font-size: 1.5em;
-}*/
+h1 {
+  text-align: center;
+}
 .menu {
 	background: #59BFA5;
 	border-radius: 0.7em;
@@ -40,6 +41,10 @@ a {
 .menu ul li a {
 		color: seashell;
 }
+
+  .menu_compartir {
+    text-align: center;
+  }
 
 /* Pintamos el último elemento del menu, su borde de ingual color que el fondo del <nav> */
 .menu ul li:nth-last-child(1) {
@@ -93,14 +98,18 @@ a {
 }
 
 #logo-pqrs {
-	width: 4em;
-	height: 4em;
+	width: 8em;
+	height: 8em;
+  border: .3em solid lightgray;
+  border-radius: 50%;
 }
 
 footer p {
+  color: white;
+  background: #59BFA5;
 	text-align: center;
-  margin-top: 1em;
-  margin-bottom: .1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 
 button {
@@ -205,7 +214,6 @@ button .fa {
     list-style: none;
     margin: 0em;
     max-width: 100%;
-    text-align: center;
   }
 
 
@@ -220,6 +228,7 @@ button .fa {
 i {
   margin-left: 0.3em;
 }
+
 
 /*
   Configuración para PCs
