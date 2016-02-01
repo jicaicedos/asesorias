@@ -5,17 +5,12 @@ body {
   font-size: 14px;
 }
 
-a {
-  text-decoration: none;
-}
-h1 {
-  text-align: center;
-}
+a {  text-decoration: none;  }
+
+h1 {  text-align: center;  }
 
 
-/*
-  Fuente de iconos
-*/
+/*  Fuente de iconos  */
 
 @font-face {
     font-family: 'icons_asesorias_aspi';
@@ -219,7 +214,6 @@ button .fa {
   position: absolute;
   text-align: left;
   top: 0;
-  /*width: 1em;*/
   font-size: 2em;
 }
 
@@ -313,20 +307,6 @@ button .fa {
   border-left: 0.2em solid lightgray; 
 }
 
-/*
-.menu__vineta {
-  list-style-image: url('images/bullets-naranja.png');  
-}
-
-.menu__list__verde {
-  list-style-image: url('images/bullets-verde.png');  
-}
-*/
-/*.menu__vineta__servicio {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}*/
-
 /* Botonera de compartir por redes sociales */
 .menu_compartir {
   text-align: center;
@@ -342,7 +322,6 @@ button .fa {
   border: 2px solid #E2DDD9;
   background: #F1EFEF;
   margin-bottom: .6em;
-  /*background: white;*/
 }
 
 .contenido_izquierdo p, .contenido_derecho p {
@@ -396,12 +375,12 @@ footer p {
 }
 
 
-  .menu_compartir {
-    display: block;
-    list-style: none;
-    margin: 0em;
-    max-width: 100%;
-  }
+.menu_compartir {
+  display: block;
+  list-style: none;
+  margin: 0em;
+  max-width: 100%;
+}
 
 
 .btn_compartir {
@@ -414,12 +393,7 @@ footer p {
 
 i {  margin-left: 0.3em; }
 
-
-
-
-/*
-  Pantalla pequeña Móviles
-*/
+/*  Pantalla pequeña Móviles  */
 
 @media screen and (max-width: 719px) {
   .estructura {
@@ -436,9 +410,7 @@ i {  margin-left: 0.3em; }
 
 }
 
-/*
-  Configuración para PCs
-*/
+/*  Configuración para PCs  */
 
 @media screen  and (min-width: 1000px) {
   body {
