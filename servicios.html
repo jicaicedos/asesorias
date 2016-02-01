@@ -3,14 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="estilos.css">
-	<title>Asesorias</title>
+	<title>Asesorias :: Servicios</title>
 
     <!-- Mobile Specific Metas-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-	<script src="http://code.jquery.com/jquery-2.2.0.js"></script>	
-	<script src="js/asesoria.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/sharer.js/0.2.3/sharer.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -19,16 +16,15 @@
 	<div class="layout">
 		<header>
 			<div class="encabezado">
-				<img id="logo-pqrs" src="images/api.jpg" alt="logo ASPI">
+				<a href="index.html">
+					<img id="logo-pqrs" src="images/api.jpg" alt="logo ASPI">
+				</a>
 				<h1>Asesorías Públicas Integrales</h1>
 			</div>
 			<nav class="menu">
 				<ul id="menu__list" class="menu__list">
 					<a class="icon-menu" id="menu__icon" href=""></a>
-					<li><a href="" class="menu__link">inicio</a></li>
-					<li><a href="quienes_somos.html" class="menu__link">quienes somos</a></li>
-					<li><a href="servicios.html" class="menu__link">servicios</a></li>
-					<li><a href="" class="menu__link">contáctenos</a></li>
+					
 				</ul>
 			</nav>
 		</header>
@@ -44,19 +40,40 @@
 				</ul>
 			</div>
 			<div class="contenido_central">
-				<p id="p_contactenos">Contáctenos formulado su PQRS</p>
-				<form action="" class="contactenos_form">
-					<p>Nombre </p><input type="text" class="nombre" placeholder="Ej: Juan" name="Nombre" >
-					<p>Apellido </p><input type="text" class="apellido" placeholder="Ej: Pérez" >
-					<p>Correo electrónico </p><input type="text" class="email" placeholder="ejemplo@mail.com">
-					<p>Teléfono </p><input type="text" class="telefono" placeholder="Ej: 310 3456">
-					<p>Dirección </p><input type="text" class="direccion" placeholder="Ej: Avenida 5N # 3"></br></br>
-					<textarea type="textarea" class="comentarios" cols="35" rows="10" placeholder="Escribe tu PQRS"></textarea>
-					<p>
-						<input type="submit" class="enviar" value="Enviar">
-						<input type="submit" class="borrar" value="Borrar">
-					</p>
-				</form>
+				<p id="p_contactenos">Portafolio de servicios</p>
+				<ul class="menu__servicio">
+					<li class="menu__servicio_item">
+						Asesorías en reclamaciones de servicios públicos por consumo, clase de uso, estratificación, no prestaciones del servicio.						
+					</li>
+					<li class="menu__servicio_item">
+						Asesorías en reclamaciones pertinentes por garantías en compra de artículos y productos.	
+					</li>
+					<li class="menu__servicio_item">
+						Análisis de la viabilidad de la reclamación.	
+					</li>
+					<li class="menu__servicio_item">
+						Recopilación de evidencia.	
+					</li>
+					<li class="menu__servicio_item">
+						Tramitación directa ante las empresas públicas, empresas del estado y almacenes.	
+					</li>
+				</ul>
+				<!-- 
+				<p class="vineta_servicio">
+					Asesorías en reclamaciones de servicios públicos por consumo, clase de uso, estratificación, no prestaciones del servicio.
+				</p>
+				<p class="vineta_servicio">
+					Asesorías en reclamaciones pertinentes por garantías en compra de artículos y productos.
+				</p>
+				<p class="vineta_servicio">
+					Análisis de la viabilidad de la reclamación.
+				</p>
+				<p class="vineta_servicio">
+					Recopilación de evidencia.
+				</p>
+				<p class="vineta_servicio">
+					Tramitación directa ante las empresas públicas, empresas del estado y almacenes.
+				</p> -->
 			</div>
 			<div class="contenido_derecho">
 			    <p>Comunidad</p>
